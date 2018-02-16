@@ -16,7 +16,7 @@ const handler = async (req, res) => {
     const accountCreationDetails = {
       formattedDate: format(
         new Date(accounts[0].created * 1000),
-        `MMMM Do ${new Date().getFullYear()} @ HH:mm`,
+        `MMMM Do ${new Date().getFullYear()}`,
       ),
       ageOfAccount:
         new Date().getFullYear() -
